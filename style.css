@@ -1,0 +1,62 @@
+:root {
+    --primary: #05a660;
+    --secondary: #007984;
+    --accent: #021F47;
+    --secondaccent: #4374B0;
+    --light: #ffffff;
+    --dark: #000000;
+}
+
+body {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: var(--primary);
+    color: var(--light);
+    line-height: 1.5;
+}
+
+.section-title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: var(--light);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--dark);
+}
+
+.table-wrapper {
+      background-color: var(--secondary);
+      border: 1px solid var(--dark);
+      overflow-x: auto;        
+      margin-bottom: 40px;
+}
+
+table {
+      width: 100%;
+      border-collapse: collapse;
+}
+    
+thead th {
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--light);
+      text-align: left;
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--dark);
+      background-color: var(--accent);       
+      white-space: nowrap;
+}
+
+tbody td{
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--dark);
+    white-space: nowrap;
+}
+
+tbody tr:hover{
+    background-color: var(--secondaccent);
+}
