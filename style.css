@@ -60,3 +60,52 @@ tbody td{
 tbody tr:hover{
     background-color: var(--secondaccent);
 }
+
+.detail-panel {
+      background-color: var(--secondary);
+      border: 1px solid var(--dark);
+      border-top: 2px solid var(--accent);
+      padding: 24px;
+      margin-bottom: 40px;
+    }
+
+    .detail-panel h2 {
+      font-family: var(--head);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    
+    .detail-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background-color: var(--secondary);  
+    }
+
+    .detail-cell {
+      background-color: var(--accent);
+      padding: 12px 14px;
+    }
+
+    
+    .detail-cell.full-width {
+      grid-column: 1 / -1;
+    }
+
+    .detail-key {
+      font-size: 9px;
+      letter-spacing: 2px;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+
+    .detail-val {
+      font-size: 13px;
+      color: var(--text);
+    }
