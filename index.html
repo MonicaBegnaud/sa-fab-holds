@@ -1,47 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>SA Fab Holds</title>
-    </head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SA Fab Holds</title>
     <link rel="stylesheet" href="./style.css" />
+  </head>
 
-    <div class="section-title">Lots on Hold</div>
+  <body>
+  <header class="site-header">
+    <div class="header-brand">
+      <div class="brand-logo">SA<span>-</span>Fab<span>-</span>Holds</div>
+      <div class="brand-divider"></div>
+    </div>
+    <div class="header-meta">
+      <nav class="header-nav">
+        <a href="index.html" class="nav-link active">Dashboard</a>
+      </nav>
+    </div>
+  </header>
 
-    <div class="table-wrapper">
-      <table>
-        <thead>
-          <tr>
-            <th>Lot ID</th>
-            <th>Qty</th>
-            <th>Priority</th>
-            <th>State</th>
-            <th>Area</th>
-            <th>Equipment</th>
-            <th>Hold Code</th>
-            <th>Hold Owner</th>
-            <th>Age</th>
-          </tr>
-        </thead>
-        <tbody>
-            <tr class="row-held">
-            <td class="lot-id">
-              <a href="detail.html">LOT-10001</a>
-            </td>
-            <td>18</td>
-            <td class="p1">P1</td>
-            <td><span class="badge badge-held">Held</span></td>
-            <td>Photo</td>
-            <td>PHOTO-07</td>
-            <td>ENG-REVIEW</td>
-            <td>j.smith</td>
-            <td class="age-critical">62.3h</td>
-          </tr>
-        </tbody>
-    </table>
-   </div>
+  <main class="page-wrap">
 
-         
-            
-            
+    <div class="section-label">Shift Overview</div>
+    <div class="kpi-grid">
+      <div class="kpi-card" style="--kpi-color: var(--danger)">
+        <div class="kpi-label">Active Holds</div>
+        <div class="kpi-value">24</div>
+    </div>
+ 
+      <div class="kpi-card" style="--kpi-color: var(--warning)">
+        <div class="kpi-label">Avg Hold Age</div>
+        <div class="kpi-value">18<sup>h</sup></div>
+      </div>
+ 
+      <div class="kpi-card" style="--kpi-color: var(--danger)">
+        <div class="kpi-label">P1 Critical</div>
+        <div class="kpi-value">7</div>
+      </div>
+ 
+      <div class="kpi-card" style="--kpi-color: var(--primary)">
+        <div class="kpi-label">Released Today</div>
+        <div class="kpi-value">11</div>
+      </div>
+ 
+      <div class="kpi-card" style="--kpi-color: var(--primary)">
+        <div class="kpi-label">Hold Rate</div>
+        <div class="kpi-value">7.7<sup>%</sup></div>
+      </div>
+    </div>
+
+
+
+
+  </main>
+  </body>
 </html>
