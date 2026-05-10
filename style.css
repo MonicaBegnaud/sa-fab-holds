@@ -4,7 +4,7 @@
     --accent: #021F47;
     --secondaccent: #4374B0;
     --background: #F4F7FB;
-    --text-primary: #021F47;
+    --text-primary: #f4f7fb;
     --text-secondary: #3A6A80;
     --text-accent: #7A96B2;
     --danger: #D94F4F;
@@ -156,3 +156,105 @@ body {
   vertical-align: super;
 }
 
+.table-section {
+  background: var(--accent);
+  border: 1px solid var(--secondary);
+  margin-bottom: 28px;
+}
+ 
+.table-wrap { overflow-x: auto; }
+ 
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+ 
+thead th {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  padding: 9px 14px;
+  text-align: left;
+  border-bottom: 1px solid var(--secondary);
+  white-space: nowrap;
+  background: var(--accent);
+}
+ 
+tbody tr {
+  border-bottom: 1px solid var(--secondary);
+  transition: background 0.1s;
+}
+ 
+tbody tr:hover { 
+  background: var(--surface-2); 
+}
+ 
+tbody tr.row-held   { 
+  border-left: 2px solid var(--danger); 
+}
+
+tbody tr.row-run    { 
+  border-left: 2px solid var(--primary); 
+}
+ 
+td {
+  padding: 9px 14px;
+  color: var(--text-primary);
+  white-space: nowrap;
+  vertical-align: middle;
+  font-size: 13px;
+}
+ 
+.col-lotid {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+ 
+.col-lotid a {
+  color: inherit;
+  text-decoration: none;
+}
+ 
+.col-lotid a:hover { 
+  text-decoration: underline; 
+}
+ 
+.col-mono {
+  font-size: 11px;
+  color: var(--text-primary);
+}
+ 
+.col-equip {
+  font-size: 11px;
+  color: var(--secondary);
+}
+ 
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  border-radius: 2px;
+}
+ 
+.badge-held     { 
+  color: var(--danger); 
+  border: 1px solid var(--danger); 
+}
+
+.badge-runhold  { 
+  color: var(--warning); 
+  border: 1px solid var(--warning); 
+}
+
+ 
+.priority { font-family: var(--font-mono); font-size: 12px; font-weight: 500; }
+.p1 { color: var(--danger); }
+.p2 { color: var(--warning); }
+ 
