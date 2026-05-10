@@ -1,70 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>SA Fab Holds</title>
-        <link rel="stylesheet" href="./style.css" /> 
-    </head>
-
-   <div class="section-title">Lot Detail — LOT-10001</div>
-
-    <div class="detail-panel">
-      <h2>Lot Information</h2>
-      <div class="detail-grid">
-
-        <div class="detail-cell">
-          <div class="detail-key">Lot ID</div>
-          <div class="detail-val accent">LOT-10001</div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SA Fab Holds — LOT-10001 Detail</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<header class="site-header">
+    <div class="header-brand">
+      <div class="brand-logo">SA<span>-</span>Fab<span>-</span>Holds</div>
+      <div class="brand-divider"></div>
+    </div>
+    <div class="header-meta">
+      <nav class="header-nav">
+        <a href="index.html" class="nav-link active">Dashboard</a>
+      </nav>
+    </div>
+  </header>
+ 
+<main class="page-wrap">
+ 
+  <div class="page-title-bar">
+    <div class="page-title-main">
+      <div class="page-title">Lot Detail</div>
+      <div class="lot-id-badge">LOT-10001</div>
+    </div>
+  </div>
+ 
+  <div class="section-label">Lot Information</div>
+  <div class="detail-panel">
+ 
+    <div class="hold-banner">
+      <div>
+        <div class="hold-banner-label">Active Hold</div>
+        <div class="hold-banner-text">This lot is currently on hold. Hold age: <strong>62.3h</strong> — exceeds 48h threshold. Immediate 
+          action required.
         </div>
-
-        <div class="detail-cell">
-          <div class="detail-key">Quantity</div>
-          <div class="detail-val">18 wafers</div>
-        </div>
-
-        <div class="detail-cell">
-          <div class="detail-key">Priority</div>
-          <div class="detail-val danger">P1 — Critical</div>
-        </div>
-
-        <div class="detail-cell">
-          <div class="detail-key">State</div>
-          <div class="detail-val danger">Held</div>
-        </div>
-
-        <div class="detail-cell">
-          <div class="detail-key">Area</div>
-          <div class="detail-val">Photo</div>
-        </div>
-
-        <div class="detail-cell">
-          <div class="detail-key">Equipment ID</div>
-          <div class="detail-val accent">PHOTO-07</div>
-        </div>
-
-        <div class="detail-cell">
-          <div class="detail-key">Hold Code</div>
-          <div class="detail-val warn">ENG-REVIEW</div>
-        </div>
-
-        <div class="detail-cell">
-          <div class="detail-key">Hold Owner</div>
-          <div class="detail-val">j.smith</div>
-        </div>
-
-        <div class="detail-cell">
-          <div class="detail-key">Hold Age</div>
-          <div class="detail-val danger">62.3h</div>
-        </div>
-
-        <div class="detail-cell full-width">
-          <div class="detail-key">Hold Reason</div>
-          <div class="detail-val warn">Particle count exceeds spec on last WM measurement. Awaiting engineering disposition.</div>
-        </div>
-
       </div>
     </div>
 
-    </html>
-    
+    <div class="detail-grid">
+ 
+      <div class="detail-cell">
+        <div class="detail-key">Lot ID</div>
+        <div class="detail-val accent">LOT-10001</div>
+      </div>
+ 
+      <div class="detail-cell">
+        <div class="detail-key">Quantity</div>
+        <div class="detail-val">18 wafers</div>
+      </div>
+ 
+      <div class="detail-cell">
+        <div class="detail-key">Priority</div>
+        <div class="detail-val danger large">P1 — Critical</div>
+      </div>
+ 
+      <div class="detail-cell">
+        <div class="detail-key">State</div>
+        <div class="detail-val danger">Held</div>
+      </div>
+ 
+      <div class="detail-cell">
+        <div class="detail-key">Area</div>
+        <div class="detail-val">Photo</div>
+      </div>
+ 
+      <div class="detail-cell">
+        <div class="detail-key">Equipment ID</div>
+        <div class="detail-val">PHOTO-01</div>
+      </div>
+ 
+      <div class="detail-cell">
+        <div class="detail-key">Hold Code</div>
+        <div class="detail-val">E2</div>
+      </div>
+ 
+      <div class="detail-cell">
+        <div class="detail-key">Hold Owner</div>
+        <div class="detail-val">m. begnaud</div>
+      </div>
+ 
+      <div class="detail-cell">
+        <div class="detail-key">Hold Age</div>
+        <div class="detail-val danger">62.3h</div>
+      </div>
+ 
+      <div class="detail-cell">
+        <div class="detail-key">Hold Placed</div>
+        <div class="detail-val">04/08/2025 · 14:32:07</div>
+      </div>
+ 
+      <div class="detail-cell">
+        <div class="detail-key">Is Held</div>
+        <div class="detail-val danger">Yes</div>
+      </div>
+ 
+      <div class="detail-cell">
+        <div class="detail-key">Release Time</div>
+        <div class="detail-val">Pending</div>
+      </div>
+ 
+      <div class="detail-cell span-3">
+        <div class="detail-key">Hold Reason</div>
+        <div class="detail-val">OOC measurement, hold for ENGR review</div>
+      </div>
+ 
+    </div>
+ 
+    <div class="action-bar">
+      <a href="index.html" class="btn btn-ghost">← Back</a>
+      <a href="#" class="btn btn-ghost">+ Add Comment</a>
+      <a href="#" class="btn btn-success">✓ Release Hold</a>
+      <a href="#" class="btn btn-danger">⊗ Escalate</a>
+    </div>
+ 
+  </div>
+ 
+<footer class="site-footer">
+  <div class="footer-text">SA Fab Holds · Senior Capstone Project · CMPA-4304</div>
+</footer>
+ 
+</body>
+</html>
