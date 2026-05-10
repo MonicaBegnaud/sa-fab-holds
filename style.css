@@ -188,7 +188,7 @@ tbody tr {
 }
  
 tbody tr:hover { 
-  background: var(--surface-2); 
+  background: var(--secondaccent); 
 }
  
 tbody tr.row-held   { 
@@ -253,7 +253,7 @@ td {
   border: 1px solid var(--warning); 
 }
 
-.priority { font-family: var(--font-mono); font-size: 12px; font-weight: 500; }
+.priority 
 .p1 { color: var(--danger); }
 .p2 { color: var(--warning); }
 
